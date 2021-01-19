@@ -9,8 +9,7 @@ public class LoginUsingSelenium {
  
     @Test
     public void login() {
-        // TODO Auto-generated method stub
-        
+                
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\srini\\OneDrive\\Desktop\\PyCharm\\chromedriver_win32");
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
@@ -41,13 +40,7 @@ public class LoginUsingSelenium {
         Assert.assertEquals(expectedUrl,actualUrl);
         
         String expectedText ="Product successfully added to your shopping cart";
-        Assert.assertEquals("Product successfully added to your shopping cart",expectedText);
-        
-        
-        
-        
-        
-     
+        Assert.assertEquals("Product successfully added to your shopping cart",expectedText);     
         
     }
  
